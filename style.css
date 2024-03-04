@@ -17,9 +17,6 @@ a{
 
 header{background: black; padding: 25px 20px 5px 20px;}
 
-.cont{
-    padding: 10px;
-}
 .tit{
     text-align: center; 
     width: 100%;
@@ -178,3 +175,23 @@ header{background: black; padding: 25px 20px 5px 20px;}
       transition: 1.5s;
   }
   
+.contenitore{
+  padding: 5%;
+  margin: 0 auto;
+  float: left;
+}
+
+.cimg1{
+  float: right;
+  padding: 25px;
+}
+.cimg2{
+  float: left;
+  padding: 25px; 
+}
+
+.imgresp{
+  width: 100%;
+  height: auto;
+}
+.clearfix{clear: both;}
