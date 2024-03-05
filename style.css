@@ -177,19 +177,25 @@ header div{width: fit-content;}
   }
   
 .contenitore{
-  padding: 5%;
+  padding: 2%;
   margin: 0 auto;
   float: left;
 }
 
 .cimg1{
+  margin: 10px;
   float: right;
-  padding: 25px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5); 
+  border: 1px solid black;
 }
+
 .cimg2{
   float: left;
-  padding: 25px; 
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5); 
+  margin: 10px;
+  
 }
+
 .cimg3{width: 400px; align-items: center;}
 .cimg3 img{
 
@@ -202,3 +208,8 @@ width: 100%;
   height: auto;
 }
 .clearfix{clear: both;}
+
+.sfondo-sfumato {
+  background: linear-gradient(to bottom, black, #ded8d7);
+  padding: 40px;
+}
