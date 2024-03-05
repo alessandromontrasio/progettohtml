@@ -183,23 +183,25 @@ header div{width: fit-content;}
 }
 
 .cimg1{
-  margin: 10px;
+  margin: 40px;
   float: right;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5); 
-  border: 1px solid black;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
 }
 
 .cimg2{
   float: left;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5); 
-  margin: 10px;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
+  margin: 40px;
   
 }
 
 .cimg3{width: 400px; align-items: center;}
 .cimg3 img{
-
-width: 100%;
+  width: 100%;
+}
+.cimg4{
+  margin: 40px;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
 
 }
 
