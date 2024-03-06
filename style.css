@@ -17,7 +17,9 @@ a{
 
 header{background: black; padding: 25px 0px 5px 0px; display: flex;}
 .contenitore_top {margin: 12% 0 0 0;}
-header div{width: fit-content;}
+.contenitore_top_em {margin: 6% 0 0 0;}
+.larghezza{width: 100%;}
+/* header div{width: fit-content;} */
 .tit{
     text-align: center; 
     width: 100%;
@@ -25,8 +27,15 @@ header div{width: fit-content;}
     font-size: 55px;
 }
 
+.tit_em{
+  text-align: center; 
+  width: 100%;
+  display: block;
+  font-size: 55px;
+}
+
 #menu{
-    text-align: center; 
+    text-align: center;  
     margin: 35px 20px 20px 20px;
 }
 #menu li{display: inline;}
