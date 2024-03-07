@@ -69,7 +69,7 @@ header div{width: fit-content;}
     margin: 2px 16px;
   }
 
-  .main-carousel{padding: 40px 0px 40px 0; }
+  .main-carousel{padding: 40px 0px 40px 0px;}
 
   .carousel-cell
   {
@@ -80,51 +80,52 @@ header div{width: fit-content;}
       line-height: 350px;
       text-align: center;
       margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\tony.png');
+      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('progettohtml\foto\tony.png');
       background-size: cover  ;
       margin-right: 20px; 
       transition: 1.5s;
+      display: inline;
   }
 
   .tony_boy
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('tony boy.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\tony.png') );
     background-size: cover;
   }
 
   .kid_yugi
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('kid yugi.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\yugi.png') );
     background-size: cover;
   }
 
   .artie_5ive
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('artie 5ive.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\artie.png') );
     background-size: cover;
   }
 
   .digital_astro
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('digital astro.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\digital-astro.png') );
     background-size: cover;
   }
 
   .nerissima
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('nerissima serpe.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\nerissima.png') );
     background-size: cover;
   }
 
   .papa_v
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('papa v.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\papa.png') );
     background-size: cover;
   }
 
   .low_red
   {
-    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('low red.html') );
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\low-redd.png') );
     background-size: cover;
   }
 
