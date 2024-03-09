@@ -84,7 +84,7 @@ header div{width: fit-content;}
       background-size: cover  ;
       margin-right: 20px; 
       transition: 1.5s;
-      display: inline;
+      display: inline-block
   }
 
   .tony_boy
