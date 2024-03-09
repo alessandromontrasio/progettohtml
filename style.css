@@ -88,9 +88,9 @@ header div{width: fit-content;}
     margin: 2px 16px;
   }
 
-  .main-carousel{padding: 40px 0px 40px 0; }
+  .main-carousel{padding: 40px 0px 40px 0px;}
 
-  .carousel-cell1
+  .carousel-cell
   {
       height: 350px;
       width: 350px; 
@@ -99,101 +99,55 @@ header div{width: fit-content;}
       line-height: 350px;
       text-align: center;
       margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\tony.png');
+      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('progettohtml\foto\tony.png');
       background-size: cover  ;
       margin-right: 20px; 
       transition: 1.5s;
+      display: inline-block
   }
 
-  .carousel-cell2
+  .tony_boy
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\yugi.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\tony.png') );
+    background-size: cover;
   }
 
-  .carousel-cell3
+  .kid_yugi
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\artie.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\yugi.png') );
+    background-size: cover;
   }
 
-  .carousel-cell4
+  .artie_5ive
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\nerissima.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\artie.png') );
+    background-size: cover;
   }
 
-  .carousel-cell5
+  .digital_astro
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\papa.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\digital-astro.png') );
+    background-size: cover;
   }
 
-  .carousel-cell6
+  .nerissima
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\digital-astro.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\nerissima.png') );
+    background-size: cover;
   }
 
-  .carousel-cell7
+  .papa_v
   {
-      height: 350px;
-      width: 350px; 
-      background-color: #666;
-      border-radius: 100%;
-      line-height: 350px;
-      text-align: center;
-      margin-right: 40px;
-      background: linear-gradient(0deg, rgba(0,0,0, 0.6), rgba(0,0,0, 1)), url('foto\low-redd.png');
-      background-size: cover  ;
-      margin-right: 20px; 
-      transition: 1.5s;
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\papa.png') );
+    background-size: cover;
   }
+
+  .low_red
+  {
+    background: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.8), url('progettohtml\foto\low-redd.png') );
+    background-size: cover;
+  }
+
   
 .contenitore{
   padding: 2%;
