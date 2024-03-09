@@ -18,14 +18,24 @@ a{
 header{background: black; padding: 25px 0px 5px 0px; display: flex;}
 .contenitore_top {margin: 12% 0 0 0;}
 .contenitore_top_em {margin: 6% 0 0 0;}
-.larghezza{width: 100%;}
-/* header div{width: fit-content;} */
+.larghezza{
+    width: 100%;
+    
+}
+header div{width: fit-content;}
 .tit{
     text-align: center; 
     width: 100%;
     display: block;
     font-size: 55px;
 }
+.titem{
+  text-align: center; 
+  width: 100%;
+  display: block;
+  font-size: 75px;
+}
+
 
 .tit_em{
   text-align: center; 
@@ -190,6 +200,12 @@ header{background: black; padding: 25px 0px 5px 0px; display: flex;}
   margin: 0 auto;
   float: left;
 }
+.contenitoreem{
+  padding: 2%;
+  margin: 0 auto;
+  float: left;
+}
+
 
 .cimg1{
   margin: 40px;
@@ -214,6 +230,17 @@ header{background: black; padding: 25px 0px 5px 0px; display: flex;}
 
 }
 
+.cimg4em{
+  margin: 40px;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
+  float: right;
+}
+.cimgspo{
+  margin: 40px;
+  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
+  float: right;
+   
+}
 .imgresp{
   width: 100%;
   height: auto;
@@ -223,4 +250,15 @@ header{background: black; padding: 25px 0px 5px 0px; display: flex;}
 .sfondo-sfumato {
   background: linear-gradient(to bottom, black, #ded8d7);
   padding: 40px;
+}
+
+
+.hover-link {
+  color: white; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover{
+  color: grey; 
 }
