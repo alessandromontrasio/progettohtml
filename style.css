@@ -239,6 +239,11 @@ header div{width: fit-content;}
   right: 0; 
 }
 
+.cont{
+  padding: 20px;  
+  
+}
+
 .contenitore{
   /* padding: 2%;  */
   margin: 0 auto;
