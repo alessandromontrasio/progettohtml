@@ -60,155 +60,190 @@ header div{width: fit-content;}
     display: inline-block;
   }
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white; 
-    margin: 2px;
-    min-width: 120px;
-    box-shadow: 0 8px 16px 0 rgba(100,100,100,100); 
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white; 
+  margin: 2px;
+  min-width: 120px;
+  box-shadow: 0 8px 16px 0 rgba(100,100,100,100); 
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e6e4e4; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content{
+  margin: 2px 16px;
+}
+
+.main-carousel{
+  padding: 40px 0px 40px 0px; 
+  display: flex;  
+  position: relative; /* Imposta la posizione relativa per contenere i pulsanti */
+  scroll-behavior: smooth; /* Aggiunge uno scorrimento fluido */
   
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+}
+.carousel-item { 
+  flex: 0 0 auto;
+  margin-right: 10px;
+} 
+.carousel-item a {
+  display: block; 
+  text-align: center; 
+} 
+
+.fontpalle{
+  font-size: 35;
+}
+
+.tony_boy
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 50%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/tony.png');
+  background-size: cover;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
   
-  .dropdown-content a:hover {
-    background-color: #e6e4e4; 
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown-content{
-    margin: 2px 16px;
-  }
+}
 
-  .main-carousel{padding: 40px 0px 40px 0px;}
+.kid_yugi
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/yugi.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
+.artie_5ive
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/artie.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
-  .tony_boy
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/tony.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-    
-  }
+.digital_astro
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/digital-astro.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
-  .kid_yugi
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/yugi.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
+.nerissima
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/nerissima.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
-  .artie_5ive
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/artie.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
+.papa_v
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/papa.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
-  .digital_astro
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/digital-astro.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
+.low_red
+{
+  height: 350px;
+  width: 350px; 
+  background-color: #666;
+  border-radius: 100%;
+  line-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+  background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/low-redd.png');
+  background-size: cover  ;
+  margin-right: 20px; 
+  transition: 1.5s;
+  display: inline-block
+}
 
-  .nerissima
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg,rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/nerissima.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
+.prev-btn, .next-btn {
+  position: absolute; /* Posiziona i pulsanti in modo assoluto rispetto al contenitore */
+  top: 100%; /* Posiziona i pulsanti a metà dell'altezza del contenitore */
+  transform: translateY(-50%); /* Centra i pulsanti verticalmente */
+  background-color: white; /* Imposta lo sfondo trasparente */
+  border: none; /* Rimuove il bordo */
+  font-size: 24px; /* Imposta la dimensione del carattere */
+  cursor: pointer; /* Imposta il cursore al passaggio del mouse */
+  z-index: 2; /* Imposta lo z-index per sovrapporre i pulsanti al carosello */
 
-  .papa_v
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/papa.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
+}
+.prev-btn {
+  left: 0;
+}
+.next-btn {
+  right: 0; 
+}
 
-  .low_red
-  {
-    height: 350px;
-    width: 350px; 
-    background-color: #666;
-    border-radius: 100%;
-    line-height: 350px;
-    text-align: center;
-    margin-right: 40px;
-    background: linear-gradient(0deg, rgba(48, 48, 48, 0.6), rgb(0, 0, 0)), url('foto/low-redd.png');
-    background-size: cover  ;
-    margin-right: 20px; 
-    transition: 1.5s;
-    display: inline-block
-  }
-
-  
 .contenitore{
-  padding: 2%;
+  /* padding: 2%;  */
   margin: 0 auto;
   float: left;
+  display: flex;
 }
 .contenitoreem{
   padding: 2%;
