@@ -20,7 +20,6 @@ header{background: black; padding: 25px 0px 5px 0px; display: flex;}
 .contenitore_top_em {margin: 6% 0 0 0;}
 .larghezza{
     width: 100%;
-    
 }
 header div{width: fit-content;}
 .tit{
@@ -48,7 +47,10 @@ header div{width: fit-content;}
     text-align: center;  
     margin: 35px 20px 20px 20px;
 }
-#menu li{display: inline;}
+#menu li{
+  display: inline;
+
+}
 #menu li a{
     margin: 25px; 
     font-size: 20px;
@@ -77,10 +79,6 @@ header div{width: fit-content;}
   display: block;
 }
 
-.dropdown-content a:hover {
-  background-color: #e6e4e4; 
-}
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -97,8 +95,8 @@ header div{width: fit-content;}
   
 }
 .carousel-item { 
-  flex: 0 0 auto;
-  margin-right: 10px;
+  width: 22%;
+  margin-left:3%;
 } 
 .carousel-item a {
   display: block; 
@@ -123,7 +121,6 @@ header div{width: fit-content;}
   margin-right: 20px; 
   transition: 1.5s;
   display: inline-block
-  
 }
 
 .kid_yugi
@@ -222,17 +219,6 @@ header div{width: fit-content;}
   display: inline-block
 }
 
-.prev-btn, .next-btn {
-  position: absolute; /* Posiziona i pulsanti in modo assoluto rispetto al contenitore */
-  top: 100%; /* Posiziona i pulsanti a metà dell'altezza del contenitore */
-  transform: translateY(-50%); /* Centra i pulsanti verticalmente */
-  background-color: white; /* Imposta lo sfondo trasparente */
-  border: none; /* Rimuove il bordo */
-  font-size: 24px; /* Imposta la dimensione del carattere */
-  cursor: pointer; /* Imposta il cursore al passaggio del mouse */
-  z-index: 2; /* Imposta lo z-index per sovrapporre i pulsanti al carosello */
-
-}
 
 .TY{
   color: white;
@@ -283,10 +269,15 @@ header div{width: fit-content;}
 }
 .cimgspo{
   margin: 40px;
-  box-shadow: 0 0 100px 20px rgba(0, 0, 0, 0.5); 
   float: right;
-   
+  max-height: 250px;
+} 
+
+.cimgspo a{
+  width: auto;
+  height: 100%;
 }
+
 .imgresp{
   width: 100%;
   height: auto;
@@ -297,14 +288,35 @@ header div{width: fit-content;}
   background: linear-gradient(to bottom, black, #ded8d7);
   padding: 40px;
 }
-
-
-.hover-link {
-  color: white; 
-  text-decoration: none;
-  transition: color 0.3s ease;
+.contenitore_top a:hover{
+  background-color: rgb(41, 41, 41);
+}
+.contenitore_top .dropdown-content a:hover{
+  background-color: #ded8d7;
 }
 
-.hover-link:hover{
-  color: grey; 
+.contenitore_top a{
+  transition: .5s;
+}
+
+.contenitore_top_em a:hover{
+  background-color: rgb(41, 41, 41);
+}
+.contenitore_top_em .dropdown-content a:hover{
+  background-color: #ded8d7;
+}
+
+.contenitore_top_em a{
+  transition: .5s;
+}
+
+.cimgspo:hover{
+  background-color: rgb(41, 41, 41);
+  padding: 0px;
+}
+.cimgspo{
+  transition: .5s;
+}
+.contenitore_top_em a{
+  transition: .5s;
 }
