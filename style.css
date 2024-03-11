@@ -330,3 +330,18 @@ header div{width: fit-content;}
   width: 100%;
 }
 .margin{margin: 0 40px 40px 40px;}
+
+.cimgalb:hover{
+  margin: 0 55px 0 55px;
+}
+
+.cimgalb{
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  transition: .5s;
+}
+
+.inlinea{
+  display: flex;
+}
