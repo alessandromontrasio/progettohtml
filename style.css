@@ -320,3 +320,7 @@ header div{width: fit-content;}
 .contenitore_top_em a{
   transition: .5s;
 }
+
+.footer{
+  overflow: hidden;
+}
