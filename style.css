@@ -42,6 +42,13 @@ header div{width: fit-content;}
   display: block;
   font-size: 55px;
 }
+.dx{
+  float: right;
+
+}
+.sx{
+  float: left;
+}
 
 #menu{
     text-align: center;  
@@ -55,6 +62,23 @@ header div{width: fit-content;}
     margin: 25px; 
     font-size: 20px;
    
+}
+
+#accedi{
+  text-align: center; 
+  margin: 35px 20px 20px 20px;
+}
+#accedi li{
+  display: inline;
+
+}
+#accedi li a{
+  margin: 12px;
+  padding: 13px; 
+  font-size: 20px;
+
+  border: 0.5px solid white;
+ 
 }
 
 .dropdown {
