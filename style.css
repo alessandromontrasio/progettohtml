@@ -369,3 +369,38 @@ header div{width: fit-content;}
 .inlinea{
   display: flex;
 }
+
+.card-articolo{
+  display: flex;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  margin: 10px 0px;
+  padding: 5px;
+}
+.card-articolo__img {
+  width: 150px;
+  height: 150px;
+}
+.card-articolo__img img {
+  width: 100%;
+}
+.card-articolo__testo {
+  align-items: center;
+  padding: 10px;
+}
+.link-scheda {
+  font-size: 10px;
+}
+
+.foto {
+  float: right;
+  width: 30%;
+}
+.foto img {
+  width: 100%;
+  margin-left: 10px;
+}
+.descrizione {
+  text-align: left;
+  font-size: 12px;
+}

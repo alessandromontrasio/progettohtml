@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>PlayersClub-Login</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
         </form>
         <?php
         if(isset($_POST["username"]) and isset($_POST["password"])){
-            require("data/connessionedb.php");
+            require("../data/connessionedb.php");
 
             $myquery= "SELECT username, password
                         FROM utenti

@@ -21,10 +21,20 @@
 	
         <div>
 			<?php
+				require("../data/connessionedb.php");
 
-				$sql = "SELECT cod_articolo, nome, foto
-						FROM articoli  
-						WHERE nome='$nome'";
+				$sql = "SELECT 
+							articoli.cod_articolo,
+							articoli.nomearticolo,
+							articoli.foto,
+							articoli.descrizione,
+							artista.nomeartista
+						FROM 
+							articoli
+						JOIN 
+							artista
+						ON 
+							articoli.cod_artista = artista.cod_artista";
 
 				$ris = $conn->query($sql) or die("<p>query errata</p>");
 				if($ris->num_rows == 0){
@@ -32,34 +42,29 @@
 				}else{
 				foreach($ris as $riga){
 					$cod_articolo = $riga["cod_articolo"];
-					$nome = $riga["nome"];
+					$nomearticolo = $riga["nomearticolo"];
 					$foto = $riga["foto"];
+					$descrizione = $riga["descrizione"];
+					$nomeartista = $riga["nomeartista"];
 			
 					echo <<<EOD
-						<div class="card-libro">
-							<div class="card-libro__img">
+						<div class="card-articolo">
+							<div class="card-articolo__img">
 								<img src="../immagini/$foto" alt="$foto">
 							</div>
-							<div>
-								<div>
-									<p>Titolo: $nome</p>
-									
-									<a href="scheda-libro.php?cod_libro=$cod_articolo"">Scheda libro</a>
-								</div>
+							<div class="card-articolo__testo">
+								<p>Titolo: $nomearticolo</p> 
+								<p>Artista: $nomeartista</p>
+								<p>Descrizione: $descrizione</p>
 							</div>
 						</div>
 					EOD;
-						// echo "<li>$titolo - $nome $cognome</li>";
 					}
-                }
+                } 
 			?>
 		</div>
 
 	</div>
-	<?php 
-		require('footer.php');
-	?>	
-	
 </body>
 </html>
 <?php
