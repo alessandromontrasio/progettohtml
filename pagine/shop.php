@@ -1,11 +1,3 @@
-<?php
-	session_start();
-    if(!isset($_SESSION['username'])){ 
-		header('location: ../index.php');
-	}
-    $username = $_SESSION["username"];
-?>
-    
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -50,7 +42,7 @@
 					echo <<<EOD
 						<div class="card-articolo">
 							<div class="card-articolo__img">
-								<img src="../immagini/$foto" alt="$foto">
+								<img src="../foto/$foto" alt="$foto">
 							</div>
 							<div class="card-articolo__testo">
 								<p>Titolo: $nomearticolo</p> 
@@ -58,7 +50,7 @@
 								<p>Descrizione: $descrizione</p>
 							</div>
 						</div>
-					EOD;
+					EOD;		
 					}
                 } 
 			?>
