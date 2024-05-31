@@ -49,7 +49,7 @@
         </div>         
         </header>  
 	
-        <div>
+        <main  class="cont sfondo-sfumato">
 			<?php
 				require("../data/connessionedb.php");
 
@@ -91,12 +91,19 @@
 					}
                 } 
 			?>
-		</div>
+		</main>
+
 
 	</div>
+	
+	<footer class="footer">
+		<p>sito progettato da Montrasio Alessandro e Riccobelli Giacomo</p>
+	</footer>
 </body>
+
 </html>
 <?php
 	$conn->close();
 ?>
+
 

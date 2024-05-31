@@ -15,12 +15,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players Club-Registrazione</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>PlayersClub-Login</title>
 </head>
 <body>
-    
-    <div class ="contenuto">
-        <h1>PLAYERS CLUB</h1>
+    <div class ="contenutoreg">
 		<h2>Pagina di Registrazione</h2>
 
         <form action="" method = "post">
@@ -94,7 +93,7 @@
                         $conn->close();
 
                         echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                        header('Refresh: 5; URL=../index.html');
+                        header('Refresh: 5; URL=shop.php');
 
                     } else {
                         echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
@@ -103,9 +102,7 @@
             }
         }
         ?>
-        <?php
-            require("footer.php");
-        ?>
+       
     </div>
 </body>
 </html>

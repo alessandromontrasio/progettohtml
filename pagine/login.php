@@ -15,9 +15,8 @@
 <body>
     
     <div class="contenuto">
-        <h1>PLAYERS CLUB</h1>
-		<h2>Pagina di Login</h2>
-
+            <h1>PLAYERS CLUB</h1>
+            <h2>Pagina di Login</h2>
         <form action="", method="post">
             <table>
                 <tr>
@@ -32,6 +31,7 @@
             <input type="submit" value="ACCEDI">
         
         </form>
+        <h4>Non sei ancora registrato? <a href="registrazione.php"> REGISTRATI QUI</a> </h4>
         <?php
         if(isset($_POST["username"]) and isset($_POST["password"])){
             require("../data/connessionedb.php");
@@ -49,13 +49,13 @@
                 $_SESSION["username"] = $username;
 
                 $conn->close();
-                header("location: ../index.html");
+                header("location: shop.php");
             }
         }
         ?>
         
         
-
+        
     </div>
     
 </body>

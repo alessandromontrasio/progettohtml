@@ -1,9 +1,12 @@
 *{box-sizing: border-box;}
-body,
-html{padding: 0; margin: 0; overflow-x: hidden;}
-body{
-    background: #ded8d7;
-    font-family: Verdana;
+
+html{padding: 0; margin: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', Verdana, 'DejaVu Sans', Arial, sans-serif;
+	background-color: #ded8d7;
 }
 a{
     color: white;
@@ -406,10 +409,11 @@ header div{width: fit-content;}
 }
 
 form {
-  background: #fff;
+  background: white;
   padding: 20px;
   margin: 20px 0;
   box-shadow: 0 0 10px #ccc;
+  color: black;
 }
 
 form input[type="text"],
@@ -418,7 +422,7 @@ form input[type="email"] {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #ddd;
+  border: 1px solid black;
 }
 
 form input[type="submit"] {
@@ -438,7 +442,7 @@ form input[type="submit"]:hover {
   width: 30%;
   margin: 1.5%;
   padding: 10px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 30px black;
   background: #fff;
   text-align: center;
 }
@@ -491,4 +495,25 @@ form input[type="submit"]:hover {
   font-family: arial, verdana, sans-serif;
   font-size: 12px;
   cursor: pointer;
+}
+
+.contenuto {
+	width: 550px;
+	margin: auto;
+	padding: 50px;
+	text-align: center;
+  background-color: black;
+  color: white;
+	padding-bottom: 40px;
+  box-shadow: 0 0 100px black;
+}
+.contenutoreg {
+	width: 550px;
+	margin: auto;
+	padding: 30px 50px 0 50px;
+	text-align: center;
+  background-color: black;
+  color: white;
+	padding-bottom: 40px;
+  box-shadow: 0 0 100px black;
 }
