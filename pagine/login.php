@@ -49,7 +49,7 @@
                 $_SESSION["username"] = $username;
 
                 $conn->close();
-                header("location: progettohtml.html");
+                header("location: ../index.html");
             }
         }
         ?>
