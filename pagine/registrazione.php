@@ -1,13 +1,13 @@
 <?php
-    if(isset($_POST["username"])){$username = $_POST["username"]} else $username = ""
-    if(isset($_POST["password"])){$password = $_POST["password"]} else $password = ""
-    if(isset($_POST["conferma"])) $conferma = $_POST["conferma"] else $conferma = ""
-    if(isset($_POST["nome"])) $nome = $_POST["nome"] else $nome = ""
-    if(isset($_POST["cognome"])) $cognome = $_POST["cognome"] else $cognome = ""
-    if(isset($_POST["email"])) $email = $_POST["email"] else $email = ""
-    if(isset($_POST["telefono"])) $telefono = $_POST["telefono"] else $telefono = ""
-    if(isset($_POST["comune"])) $comune = $_POST["comune"] else $comune = ""
-    if(isset($_POST["indirizzo"])) $indirizzo = $_POST["indirizzo"] else $indirizzo = ""
+    if(isset($_POST["username"])) $username = $_POST["username"]; else $username = "";
+    if(isset($_POST["password"])) $password = $_POST["password"]; else $password = "";
+    if(isset($_POST["conferma"])) $conferma = $_POST["conferma"]; else $conferma = "";
+    if(isset($_POST["nome"])) $nome = $_POST["nome"]; else $nome = "";
+    if(isset($_POST["cognome"])) $cognome = $_POST["cognome"]; else $cognome = "";
+    if(isset($_POST["email"])) $email = $_POST["email"]; else $email = "";
+    if(isset($_POST["telefono"])) $telefono = $_POST["telefono"]; else $telefono = "";
+    if(isset($_POST["comune"])) $comune = $_POST["comune"]; else $comune = "";
+    if(isset($_POST["indirizzo"])) $indirizzo = $_POST["indirizzo"]; else $indirizzo = "";
 ?>
 
 <!DOCTYPE html>
@@ -18,9 +18,7 @@
     <title>Players Club-Registrazione</title>
 </head>
 <body>
-    <?php
-        require("navv.php");
-    ?>
+    
     <div class ="contenuto">
         <form action="" method = "post">
             <table class = "tab_input tab_registrazione">
@@ -62,50 +60,46 @@
                     <td><input type="text" name="indirizzo" id="indirizzo" <?php echo "value = '$indirizzo'" ?>></td>
                 </tr>
             </table>
-            <input type="submit" value="Ivia">
+            <input type="submit" value="Invia">
         </form>
+        <?php
+        if(isset($_POST["username"]) and isset($_POST["password"])){
+            if($_POST["username"] == "" or $_POST["password"] == ""){
+                echo "username e password non possono essere vuoti";
+            }
+            elseif($_POST["password"] != $_POST["conferma"]){
+                echo "<p>le password non corrispondono</p>";
+            }
+            else{
+                require("../data/connessionedb.php");
 
-        <p>
-            <?php
-                if(isset($_POST["username"])) and isset($_POST["password"]){
-                    if($_POST["username"] == "" or $_POST["password"] == ""){
-                        echo "username e password non possono essere vuoti";
-                    }
-                    elseif($_POST["password"] != $_POST["username"]){
-                        echo "<p>le password non corrispondono</p>";
-                    }
-                    else{
-                        require("../data/connessionedb.php");
+                $sql = "SELECT username
+                        FROM utenti
+                        WHERE username = '$username'";
+                $ris = $conn->query($sql) or die("<p>query fallita".$conn->error."<p/>");
+                if($ris->num_rows > 0){
+                    echo "questo username è già stato usato";
+                }
+                else{
+                    $myquery = "INSERT INTO utenti (username, password, conferma, nome, cognome, email, telefono, comune, indirizzo)
+                    VALUES ('$username', '$password', '$conferma', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
 
-                        $sql = "SELECT username
-                                FROM utenti
-                                WHERE username = $username"
-                        $ris = $conn->query($sql) or die("<p>query fallita</p>");
-                        if($ris->$num_rows > 0){
-                            echo "questo username è già stato usato";
+                    if ($conn->query($myquery) === true) {
+                        session_start();
+                        $_SESSION["username"]=$username;
+                        
+                        $conn->close();
 
-                        }
-                        else{
-                            $myquery = "INSERT INTO utenti (username, password, nome, cognome, email, telefono, comune, indirizzo)
-                            VALUES ('$username', '$password', '$nome', '$cognome','$email','$telefono','$comune','$indirizzo')";
+                        echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
+                        header('Refresh: 5; URL=../index.html');
 
-                            if ($conn->query($myquery) === true) {
-                                session_start();
-                                $_SESSION["username"]=$username;
-                                
-                                $conn->close();
-
-                                echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
-                                header('Refresh: 5; URL=index.html');
-
-                            } else {
-                                echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
-                            }
-                        }
+                    } else {
+                        echo "Non è stato possibile effettuare la registrazione per il seguente motivo: " . $conn->error;
                     }
                 }
-            ?>
-        </p>
+            }
+        }
+        ?>
         <?php
             require("footer.php");
         ?>
