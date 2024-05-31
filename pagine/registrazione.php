@@ -20,11 +20,14 @@
 <body>
     
     <div class ="contenuto">
+        <h1>PLAYERS CLUB</h1>
+		<h2>Pagina di Registrazione</h2>
+
         <form action="" method = "post">
-            <table class = "tab_input tab_registrazione">
-            <tr>
+            <table>
+                <tr>
                     <td><label for="username">Username: </label></td>
-                    <td><input type="text" name="username" id="username" value="<?php echo $username ?>" required></td>
+                    <td><input type="text" name="username" required></td>
                     
                 </tr>
                 <tr>

@@ -404,3 +404,78 @@ header div{width: fit-content;}
   text-align: left;
   font-size: 12px;
 }
+
+form {
+  background: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px #ccc;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: #0779e4;
+}
+
+.shop-item {
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  padding: 10px;
+  box-shadow: 0 0 10px #ccc;
+  background: #fff;
+  text-align: center;
+}
+
+.shop-item img {
+  max-width: 100%;
+}
+
+.shop-item h3 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.shop-item p {
+  font-size: 16px;
+  color: #333;
+}
+
+.shop-item .price {
+  font-size: 20px;
+  color: #0779e4;
+}
+
+.shop-item .add-to-cart {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.shop-item .aggiungi-a-cart:hover {
+  background: #0779e4;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -75,15 +75,14 @@
 					$nomeartista = $riga["nomeartista"];
 			
 					echo <<<EOD
-						<div class="card-articolo">
-							<div class="card-articolo__img">
-								<img src="../foto/$foto" alt="$foto">
-							</div>
-							<div class="card-articolo__testo">
-								<p>Titolo: $nomearticolo</p> 
-								<p>Artista: $nomeartista</p>
-								<p>Descrizione: $descrizione</p>
-							</div>
+					<div class="container">
+						<div class="shop-item">
+							<img src="../foto/$foto" alt="$foto">
+							<p>Titolo: $nomearticolo</p> 
+							<p>Artista: $nomeartista</p>
+							<p>Descrizione: $descrizione</p>
+							<p class="price">$19.99</p>
+							<button class="aggiungi-a-cart">Aggiungi al Carrello</button>
 						</div>
 					EOD;		
 					}
