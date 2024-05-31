@@ -42,6 +42,9 @@
                     <li> <a href="../pagine/registrazione.php">Registrati</a></li>
 
                 </ul>
+				<div class="cimg1">
+					<a href="../pagine/carrello.php"> <img src="../foto/carrello.png" alt=""> </a>
+				</div>
             </div>
         </div>         
         </header>  
