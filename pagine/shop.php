@@ -8,8 +8,43 @@
 	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-	<div class="contenuto">
-		<h1 style="text-align: center; margin-top: 0px">SHOP</h1>
+		<header> 
+            <div class="cimg3">
+                <img src="../foto\logo.png" alt="">
+            </div>
+            <div class="clearfix" ></div>
+            <div>
+            <div class="contenitore_top">
+            <a href="../index.html" class="tit">SHOP</a>
+            
+            <div class="sx">
+                <ul id="menu">
+                    <li> <a href="../index.html"> Home Page</a> </li>
+                    <li> <a href="../pagine/Players Club '23.html"> Players Club '23</a> </li>
+                    <!-- <li> <a href="Emergenti.html"> Emergenti</a></li> -->
+                    <div class="dropdown">
+                        <li> <a class="dropbtn" href="../pagine/Emergenti.html">Emergenti</a> </li>
+                        <div class="dropdown-content">
+                        <a href="../pagine/tony boy.html">Tony Boy</a>
+                        <a href="../pagine/kid yugi.html">Kid Yugi</a>
+                        <a href="../pagine/artie 5ive.html">Artie 5ive</a>
+                        <a href="../pagine/digital astro.html">Digital Astro</a>
+                        <a href="../pagine/nerissima serpe.html">Nerissima Serpe</a>
+                        <a href="../pagine/papa v.html">Papa V</a>
+                        <a href="../pagine/low red.html">Low-Red</a>
+                        </div>
+                    </div>
+            </div>
+            </ul>
+            <div class="dx">
+                <ul id="accedi">
+                    <li> <a href="../pagine/login.php"> Accedi</a> </li>
+                    <li> <a href="../pagine/registrazione.php">Registrati</a></li>
+
+                </ul>
+            </div>
+        </div>         
+        </header>  
 	
         <div>
 			<?php
