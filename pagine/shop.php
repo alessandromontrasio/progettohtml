@@ -13,8 +13,8 @@
                 <img src="../foto\logo.png" alt="">
             </div>
             <div class="clearfix" ></div>
-            <div>
-            <div class="contenitore_top">
+            
+            <div class="contenitore_top_em">
             <a href="../index.html" class="tit">SHOP</a>
             
             <div class="sx">
@@ -34,20 +34,14 @@
                         <a href="../pagine/low red.html">Low-Red</a>
                         </div>
                     </div>
-            </div>
-            </ul>
-            <div class="dx">
-                <ul id="accedi">
-                    <li> <a href="../pagine/login.php"> Accedi</a> </li>
-                    <li> <a href="../pagine/registrazione.php">Registrati</a></li>
-
-                </ul>
-				<div class="cimg1">
-					<a href="../pagine/carrello.php"> <img src="../foto/carrello.png" alt=""> </a>
 				</div>
+			</div>    
+			<div class="cimgcarr" style="border: 1px solid white;">
+                <a href="carrello.php">
+                    <img src="../foto\carrello.jpg" alt="">
+                </a>
             </div>
-        </div>         
-        </header>  
+		</header>  	
 	
         <main  class="cont sfondo-sfumato">
 			<?php
