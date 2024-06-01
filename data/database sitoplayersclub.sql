@@ -62,7 +62,7 @@ REPLACE INTO `artista` (`cod_artista`, `nomeartista`) VALUES
 CREATE TABLE IF NOT EXISTS `utenti` (
   `username` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `password` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `conferma` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `conferma` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `nome` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `cognome` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `email` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
@@ -81,3 +81,4 @@ REPLACE INTO `utenti` (`username`, `password`, `conferma`, `nome`, `cognome`, `e
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
+utenti
