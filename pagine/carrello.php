@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrello</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
 <header> 
@@ -13,7 +14,7 @@
             <div class="clearfix" ></div>
             
             <div class="contenitore_top_em">
-            <a href="../index.html" class="tit">SHOP</a>
+            <a href="../carrello.html" class="tit">CARRELLO</a>
             
             <div class="sx">
                 <ul id="menu">
@@ -40,6 +41,9 @@
                 </a>
             </div>
 		</header>  
+        <main  class="cont sfondo-sfumato">
+
+        </main>
 
         <?php
             session_start();

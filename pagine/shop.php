@@ -15,7 +15,7 @@
             <div class="clearfix" ></div>
             
             <div class="contenitore_top_em">
-            <a href="../index.html" class="tit">SHOP</a>
+            <a href="../shop.html" class="tit">SHOP</a>
             
             <div class="sx">
                 <ul id="menu">
