@@ -14,7 +14,7 @@
             <div class="clearfix" ></div>
             
             <div class="contenitore_top_em">
-            <a href="../carrello.html" class="tit">CARRELLO</a>
+            <a href="carrello.php" class="tit">CARRELLO</a>
             
             <div class="sx">
                 <ul id="menu">
