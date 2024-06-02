@@ -79,11 +79,11 @@
 							<p>Artista: $nomeartista</p>
 							<p>Descrizione: $descrizione</p>
 							<p class="price">$19.99</p>
-							<a href="carrello.php"><button class="aggiungi-a-cart">Aggiungi al Carrello</button></a>
+							<a href="aggiungicarrello.php?cod_articolo='$cod_articolo'"><button class="aggiungi-a-cart">Aggiungi al Carrello</button></a>
 						</div>
 					EOD;		
 					}
-                } 
+                }  
 			?>
 		</main>
 
