@@ -1,4 +1,4 @@
-playersclub-- --------------------------------------------------------
+-- --------------------------------------------------------
 -- Host:                         127.0.0.1
 -- Versione server:              10.4.32-MariaDB - mariadb.org binary distribution
 -- S.O. server:                  Win64
@@ -24,22 +24,27 @@ CREATE TABLE IF NOT EXISTS `articoli` (
   `cod_articolo` int(11) NOT NULL AUTO_INCREMENT,
   `nomearticolo` char(50) DEFAULT NULL,
   `foto` char(50) DEFAULT NULL,
-  `descrizione` char(50) DEFAULT NULL,
-  `username` char(50) DEFAULT NULL,
+  `descrizione` char(225) DEFAULT NULL,
+  `username` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `cod_artista` int(11) DEFAULT NULL,
+  `cod_carrello` int(11) DEFAULT NULL,
   PRIMARY KEY (`cod_articolo`),
-  KEY `FK1_articoli_artista` (`cod_artista`),
-  CONSTRAINT `FK1_articoli_artista` FOREIGN KEY (`cod_artista`) REFERENCES `artista` (`cod_artista`) ON DELETE SET NULL ON UPDATE CASCADE
+  KEY `FK_articoli_carrello` (`cod_carrello`),
+  KEY `FK_articoli_artista` (`cod_artista`),
+  KEY `FK_articoli_utenti` (`username`),
+  CONSTRAINT `FK_articoli_artista` FOREIGN KEY (`cod_artista`) REFERENCES `artista` (`cod_artista`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `FK_articoli_carrello` FOREIGN KEY (`cod_carrello`) REFERENCES `carrello` (`cod_carrello`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `FK_articoli_utenti` FOREIGN KEY (`username`) REFERENCES `utenti` (`username`) ON DELETE SET NULL ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Dump dei dati della tabella playersclub.articoli: ~6 rows (circa)
-REPLACE INTO `articoli` (`cod_articolo`, `nomearticolo`, `foto`, `descrizione`, `username`, `cod_artista`) VALUES
-	(1, 'Nostalgia', 'nostalgia.jpg', 'bla', NULL, 1),
-	(2, 'I Nomi Del Diavolo', 'inomideldiavolo.jpg', 'blo', NULL, 5),
-	(3, 'Aspettando La Bella Vita', 'aspettando.jpg', 'bli', NULL, 2),
-	(4, 'Identità', 'identita.png', 'ble', NULL, 6),
-	(5, 'Gesù Bambino', 'gesubambino.jpg', 'biabds', NULL, 7),
-	(6, 'Mario II', 'marioII.jpg', 'blu', NULL, 3);
+REPLACE INTO `articoli` (`cod_articolo`, `nomearticolo`, `foto`, `descrizione`, `username`, `cod_artista`, `cod_carrello`) VALUES
+	(1, 'Nostalgia', 'nostalgia.jpg', 'Nostalgia (export) è il quarto album in studio del rapper italiano Tony Boy, pubblicato il 23 febbraio 2024 dalla Warner Music Italy.', NULL, 1, 1),
+	(2, 'I Nomi Del Diavolo', 'inomideldiavolo.jpg', 'I nomi del diavolo è il secondo album in studio del rapper italiano Kid Yugi, pubblicato il 1° marzo 2024 dalle etichette discografiche EMI Records e Universal Music Italia.', NULL, 5, 1),
+	(3, 'Aspettando La Bella Vita', 'aspettando.jpg', 'Aspettando la bella vita è il primo album in studio del rapper italiano Artie 5ive, pubblicato il 20 luglio 2023 dalla etichetta discograficha Warner Music Italy.', NULL, 2, 1),
+	(4, 'Identità', 'identita.png', 'Identità è il terzo album in studio del rapper italiano Nerissima Serpe, pubblicato il 30 novembre 2023 dalla Universal Music Italia.', NULL, 6, 1),
+	(5, 'Gesù Bambino', 'gesubambino.jpg', 'Gesù Bambino è il secondo album in studio del rapper italiano Papa V, pubblicato il 7 ottobre 2022 dalla Sony Music Entertainment Italy.', NULL, 7, 1),
+	(6, 'Mario II', 'marioII.jpg', 'Mario II è il secondo album in studio del rapper italiano Low-Red, pubblicato 20 aprile 2021 dalla Thaurus Publishing.', NULL, 3, NULL);
 
 -- Dump della struttura di tabella playersclub.artista
 CREATE TABLE IF NOT EXISTS `artista` (
@@ -58,11 +63,21 @@ REPLACE INTO `artista` (`cod_artista`, `nomeartista`) VALUES
 	(6, 'Nerissima Serpe'),
 	(7, 'Papa V');
 
+-- Dump della struttura di tabella playersclub.carrello
+CREATE TABLE IF NOT EXISTS `carrello` (
+  `cod_carrello` int(11) NOT NULL,
+  PRIMARY KEY (`cod_carrello`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dump dei dati della tabella playersclub.carrello: ~1 rows (circa)
+REPLACE INTO `carrello` (`cod_carrello`) VALUES
+	(1);
+
 -- Dump della struttura di tabella playersclub.utenti
 CREATE TABLE IF NOT EXISTS `utenti` (
   `username` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `password` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
-  `conferma` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `conferma` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `nome` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `cognome` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
   `email` char(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
@@ -81,4 +96,3 @@ REPLACE INTO `utenti` (`username`, `password`, `conferma`, `nome`, `cognome`, `e
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
-utenti
