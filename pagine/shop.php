@@ -76,9 +76,9 @@
 					<div class="container">
 						<div class="shop-item">
 							<img src="../foto/$foto" alt="$foto">
-							<p>Titolo: $nomearticolo</p> 
-							<p>Artista: $nomeartista</p>
-							<p>Descrizione: $descrizione</p>
+							<p>$nomearticolo</p> 
+							<p>$nomeartista</p>
+							<p>$descrizione</p>
 							<p class="price">$19.99</p>
 							<a href="aggiungicarrello.php?cod_articolo='$cod_articolo'"><button class="aggiungi-a-cart">Aggiungi al Carrello</button></a>
 						</div>

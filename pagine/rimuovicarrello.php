@@ -13,7 +13,7 @@
     $query="DELETE FROM carrello
             WHERE carrello.cod_articolo = $cod_articolo";
     if($conn->query($query)===true){
-        header("location: shop.php");
+        header("location: carrello.php");
     }else{echo  $conn->error;}
 
 ?>
