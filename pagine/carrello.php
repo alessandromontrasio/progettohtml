@@ -35,9 +35,9 @@
                     </div>
 				</div>
 			</div>    
-			<div class="cimgcarr" style="border: 1px solid white;">
-                <a href="carrello.php">
-                    <img src="../foto\carrello.jpg" alt="">
+			<div class="cimgcarr">
+                <a href="shop.php">
+                    <img src="../foto\shop.jpg" alt="">
                 </a>
             </div>
 	</header>
@@ -52,7 +52,7 @@
         
         $ris = $conn->query($sql) or die("<p>query errata</p>".$conn->error);
         if($ris->num_rows == 0){
-            echo "<p>nessuno</p>";
+            echo "<p class='gay'>NON E' PRESENTE ALCUN ARTICOLO</p>";
         }
         else
         {
