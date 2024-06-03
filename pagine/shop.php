@@ -21,6 +21,7 @@
                 <ul id="menu">
                     <li> <a href="../index.html"> Home Page</a> </li>
                     <li> <a href="../pagine/Players Club '23.html"> Players Club '23</a> </li>
+					<li> <a href="datipersonali.php"> Dati Personali</a> </li>
                     <!-- <li> <a href="Emergenti.html"> Emergenti</a></li> -->
                     <div class="dropdown">
                         <li> <a class="dropbtn" href="../pagine/Emergenti.html">Emergenti</a> </li>

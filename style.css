@@ -532,3 +532,14 @@ form input[type="submit"]:hover {
   font-size: 40px;
   text-align: center;
 }
+
+#tab_dati_personali{
+	
+	text-align: left;
+	margin: auto;
+}
+
+#menu{
+  text-align: center;  
+  margin: 55px 0px 0px 0px;
+}
