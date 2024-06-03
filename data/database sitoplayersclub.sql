@@ -1,8 +1,8 @@
--- playersclub-- --------------------------------------------------------
+-- --------------------------------------------------------
 -- Host:                         127.0.0.1
 -- Versione server:              10.4.32-MariaDB - mariadb.org binary distribution
 -- S.O. server:                  Win64
--- HeidiSQL Versione:            12.5.0.6677
+-- HeidiSQL Versione:            12.7.0.6850
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -66,10 +66,7 @@ CREATE TABLE IF NOT EXISTS `carrello` (
   CONSTRAINT `FK_carrello_utenti` FOREIGN KEY (`username`) REFERENCES `utenti` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dump dei dati della tabella playersclub.carrello: ~2 rows (circa)
-REPLACE INTO `carrello` (`username`, `cod_articolo`) VALUES
-	('a', 1),
-	('a', 6);
+-- Dump dei dati della tabella playersclub.carrello: ~0 rows (circa)
 
 -- Dump della struttura di tabella playersclub.utenti
 CREATE TABLE IF NOT EXISTS `utenti` (
