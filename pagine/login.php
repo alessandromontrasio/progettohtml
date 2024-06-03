@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>PlayersClub-Login</title>
 </head>
-<body>
-    
+<body class="sfondoimm">
     <div class="contenuto">
             <h1>PLAYERS CLUB</h1>
             <h2>Pagina di Login</h2>

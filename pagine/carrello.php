@@ -51,8 +51,9 @@
                     JOIN artista ON articoli.cod_artista=artista.cod_artista";
         
         $ris = $conn->query($sql) or die("<p>query errata</p>".$conn->error);
-        if($ris->num_rows == 0){
-            echo "<p class='gay'>NON E' PRESENTE ALCUN ARTICOLO</p>";
+        if($ris->num_rows == 0){ 
+            echo "<div class='contcarr'>
+            <p class='gay'>NON E' PRESENTE ALCUN ARTICOLO</p></div>";
         }
         else
         {
@@ -67,9 +68,9 @@
             <div class="container">
             <div class="shop-item">
                     <img src="../foto/$foto" alt="$foto">
-                    <p>Titolo: $nomearticolo</p> 
-                    <p>Artista: $nomeartista</p>
-                    <p>Descrizione: $descrizione</p>
+                    <p>$nomearticolo</p> 
+                    <p>$nomeartista</p>
+                    <p>$descrizione</p>
                     <p class="price">$19.99</p>
                     <a href="rimuovicarrello.php?cod_articolo='$cod_articolo'"><button class="aggiungi-a-cart">Rimuovi dal Carrello</button></a>
                 </div>
@@ -79,5 +80,8 @@
         }  
         ?>
     </main>
+    <footer class="footer">
+		<p>sito progettato da Montrasio Alessandro e Riccobelli Giacomo</p>
+	</footer>
 </body>
 </html>

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../style.css">
     <title>PlayersClub-Login</title>
 </head>
-<body>
+<body class="sfondoimm">
     <div class ="contenutoreg">
 		<h2>Pagina di Registrazione</h2>
 
@@ -92,7 +92,7 @@
                         
                         $conn->close();
 
-                        echo "Registrazione effettuata con successo!<br>sarai ridirezionato alla home tra 5 secondi.";
+                        echo "Registrazione effettuata con successo!<br>sarai ridirezionato allo shop tra 5 secondi.";
                         header('Refresh: 5; URL=shop.php');
 
                     } else {

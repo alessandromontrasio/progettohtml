@@ -47,7 +47,7 @@
     <title>Dati Personali</title>
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class="sfondoimm">
 
         <div class = "contenuto">
             <h1>PLAYERS CLUB</h1>
