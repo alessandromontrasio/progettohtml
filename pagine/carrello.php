@@ -47,7 +47,8 @@
         require("../data/connessionedb.php");
         
         $sql = "SELECT articoli.cod_articolo,articoli.nomearticolo, articoli.foto, articoli.descrizione, artista.nomeartista
-                    FROM carrello JOIN articoli ON carrello.cod_articolo = articoli.cod_articolo ";
+                    FROM carrello JOIN articoli ON carrello.cod_articolo = articoli.cod_articolo
+                    JOIN artista ON articoli.cod_artista=artista.cod_artista";
         
         $ris = $conn->query($sql) or die("<p>query errata</p>".$conn->error);
         if($ris->num_rows == 0){
